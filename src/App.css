@@ -1,0 +1,14 @@
+img{
+    height: 250px;
+
+}
+.df{
+    display: flex;
+    flex-wrap: wrap;
+}
+.center{
+    text-align: center;
+}
+.textdeco{
+    text-decoration: none;
+}
