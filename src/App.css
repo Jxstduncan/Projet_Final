@@ -5,6 +5,9 @@ img{
 .df{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+
 }
 .center{
     text-align: center;
@@ -16,11 +19,43 @@ img{
 .bgc{
     background-color: #bf181a;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 body{
     background-color: #6d071a;
 }
 .btns{
-    height: ;
+    width: 60px;
+    background-color: #FF0000;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+}
+.imgs{
+    background-color: #bf181a;
+    margin-top: 100px;
+    margin-right: 30px;
+    border-radius: 10px;
+
+}
+.info{
+    width: 500px;
+}
+.white{
+    color: white;
+    font-family: 'Oswald';
+}
+.dflex{
+    display: flex;
+    justify-content: center;
+}
+.dfl{
+    display: flex;
+    float: right;
+    margin-right: 400px;
+    margin-top: 50px;
+    height: 40px;
+    flex-direction: column;
+    background-color: #CC0000;
+    border-radius: 3px;
 }

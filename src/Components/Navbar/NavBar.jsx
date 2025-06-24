@@ -8,7 +8,7 @@ function NavBar() {
         <div className="black">
             <div>
                 <nav className="black">
-                    <div className='df'>
+                    <div className='display'>
                         <Link to='/'>
                             <button className='btn'>Home</button>
                         </Link>

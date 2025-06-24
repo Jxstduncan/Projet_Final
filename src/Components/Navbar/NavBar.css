@@ -7,7 +7,8 @@
     border: none;
     border-radius: 2px;
 }
-.df{
+.display{
     display: flex;
     justify-content: space-evenly;
+
 }
