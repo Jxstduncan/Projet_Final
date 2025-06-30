@@ -10,6 +10,19 @@ import Product from './Pages/Products/Products'
 import NavBar from './Components/Navbar/NavBar'
 
 function App() {
+  const [favoris,setFavoris] = useState([])
+  const ajouterFavori=(articles)=>{
+    if(!favoris.find(fav=>fav.id===articles.id)){
+      setFavoris([...favoris,articles])
+      console.log(coucou);
+      
+
+    }
+  }
+    const retirerFavori = (id) => {
+    setFavoris(favoris.filter(article => article.id !== id));
+  };
+
   const [data, setData] = useState([])
     useEffect(()=>{
       fetch('https://dummyjson.com/products')
@@ -26,12 +39,12 @@ function App() {
         <div>
           <NavBar/>
         <Routes>
-          <Route path='/' element={<Home data={data} />}/>
+          <Route path='/' element={<Home data={data}  ajouterFavori={ajouterFavori} />}/>
           <Route path='/Contact' element={<Contact/>}/>
-          <Route path='/Favori' element={<Favori/>}/>
+          <Route path='/Favori' element={<Favori data={data} favoris={favoris}  retirerFavori={retirerFavori} ajouterFavori={ajouterFavori} />}/>
           <Route path='/Error'  element={<Error/>}/>
           <Route path='/ProductDetail/:id' element={<ProductDetail data={data} />}/>
-          <Route path='/Produit' element={<Product/>} />
+          <Route path='/Produit' element={<Product data={data} />} />
           </Routes>  
         </div>
       </div>

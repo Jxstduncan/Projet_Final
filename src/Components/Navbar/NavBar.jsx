@@ -9,6 +9,7 @@ function NavBar() {
             <div>
                 <nav className="black">
                     <div className='display'>
+                        <h2 className='white'>Éclat & Délices</h2>
                         <Link to='/'>
                             <button className='btn'>Home</button>
                         </Link>

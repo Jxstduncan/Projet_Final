@@ -1,3 +1,5 @@
+import { faThumbsUp } from "@fortawesome/free-regular-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "react-router-dom"
 
 function Home(props){
@@ -11,6 +13,10 @@ function Home(props){
                         <Link to={`/ProductDetail/${item.id}`} className="textdeco">
                        {item?.rating >=4 &&  <button className="btns">Details</button>}
                         </Link>
+                        <Link to='/Favori'>
+                        {item?.rating >=4 &&  <button className="btns button" onClick={()=> props.ajouterFavori(item)}><FontAwesomeIcon icon={faThumbsUp}/></button>}
+                        </Link>
+                         
                     </div>
                     
                 ))}
