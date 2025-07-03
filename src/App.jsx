@@ -42,7 +42,7 @@ function App() {
           <Route path='/' element={<Home data={data}  ajouterFavori={ajouterFavori} />}/>
           <Route path='/Contact' element={<Contact/>}/>
           <Route path='/Favori' element={<Favori data={data} favoris={favoris}  retirerFavori={retirerFavori} ajouterFavori={ajouterFavori} />}/>
-          <Route path='/Error'  element={<Error/>}/>
+          <Route path='*'  element={<Error/>}/>
           <Route path='/ProductDetail/:id' element={<ProductDetail data={data} />}/>
           <Route path='/Produit' element={<Product data={data} />} />
           </Routes>  
