@@ -8,6 +8,7 @@ import Error from './Pages/Error/Error'
 import ProductDetail from './Pages/ProductDetail/ProductDetail'
 import Product from './Pages/Products/Products'
 import NavBar from './Components/Navbar/NavBar'
+import Footer from './Components/Footer/Footer'
 
 function App() {
   const [favoris,setFavoris] = useState([])
@@ -46,6 +47,7 @@ function App() {
           <Route path='/ProductDetail/:id' element={<ProductDetail data={data} />}/>
           <Route path='/Produit' element={<Product data={data} />} />
           </Routes>  
+          <Footer/>
         </div>
       </div>
     </>
